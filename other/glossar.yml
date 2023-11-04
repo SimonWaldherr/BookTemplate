@@ -1,0 +1,20 @@
+glossary:
+  Quarto:
+    url: https://quarto.org/
+    definition: An open-source scientific and technical publishing system.
+
+  Markdown:
+    url: https://en.wikipedia.org/wiki/Markdown
+    definition: Markdown is a lightweight markup language for creating formatted text using a plain-text editor.
+
+  PDF:
+    url: https://en.wikipedia.org/wiki/PDF
+    definition: Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1992 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems.
+    
+  GitHub:
+    url: https://github.com/
+    definition: GitHub is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code.
+    
+  LaTeX:
+    url: https://www.latex-project.org/
+    definition: LaTeX is a high-quality typesetting system, it includes features designed for the production of technical and scientific documentation.

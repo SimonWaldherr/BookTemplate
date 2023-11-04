@@ -1,0 +1,6 @@
+lang: de
+
+book:
+  title: Book Title
+  date: today
+  description: "short description of the content"

@@ -1,0 +1,7 @@
+## Project Structure
+
+The repository is structured as follows:
+
+- `content/`: This directory contains the Markdown files (.qmd or .md) that make up the content of your book or document.
+- `.github/workflows/`: This directory contains the GitHub Actions workflow files that automate the build process.
+- `_quarto.yml`: The Quarto configuration file that specifies how the Markdown should be converted to LaTeX and then to PDF. It also can generate .docx and .epub files.

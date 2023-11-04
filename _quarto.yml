@@ -1,0 +1,57 @@
+project:
+  type: book
+
+metadata-files:
+  - other/metadata.yml
+  - other/glossar.yml
+
+book:
+  title: "Book Title"
+  author: "Your Name"
+  date: "01.01.1970"
+  search: true
+  repo-url: "https://github.com/simonwaldherr/BookTemplate"
+  issued: "01.01.1970"
+  language: "en-US"
+  isbn: "978-0-0000-0000-0"
+  image: "other/image.jpg"
+  downloads: [pdf, epub]
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - content/intro.qmd
+    - content/tech.qmd
+    - content/structure.qmd
+    - content/workflow.qmd
+    - content/template.qmd
+    - content/conclusion.qmd
+bibliography: other/references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    keep-tex: true
+    documentclass: scrbook
+    classoption: [paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]
+    include-in-header:
+      text: |
+        \usepackage{fvextra}
+        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+        \areaset[0.50in]{4.5in}{8in}
+    include-before-body:
+      text: |
+        \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+           showspaces = false,
+           showtabs = false,
+           breaksymbolleft={},
+           breaklines
+        }
+    fig-pos: 'H'
+  epub:
+    toc: true
+    lang: en-US
+  docx:
+    toc: false
+    lang: en-US
+

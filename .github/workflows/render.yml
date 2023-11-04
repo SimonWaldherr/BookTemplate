@@ -1,0 +1,40 @@
+name: Render document with Nix and Quarto and create a Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Install Nix
+      uses: DeterminateSystems/nix-installer-action@main
+      with:
+        logger: pretty
+        log-directives: nix_installer=trace
+        backtrace: full
+
+    - name: Nix cache
+      uses: DeterminateSystems/magic-nix-cache-action@main
+
+    - name: Build development environment
+      run: |
+        nix-build
+
+    - name: Render
+      run: nix-shell --run "quarto render"
+      
+    - name: Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "_book/*.pdf,_book/*.epub,_book/*.docx,*.tex"
+        bodyFile: "other/release.md"
+

@@ -1,0 +1,7 @@
+## Using the Repository as a GitHub Template
+
+To use this repository as a starting point for your book project, follow these steps:
+
+1. Click on the 'Use this template' button on the repository page.
+2. Choose a name and description for your new repository and select whether it should be public or private.
+3. Click 'Create repository from template' to create a new repository in your account with the content and structure of this project.

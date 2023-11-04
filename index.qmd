@@ -1,0 +1,4 @@
+# Generating PDF Documents with Quarto, LaTeX, and GitHub Actions {.unnumbered}
+
+<!-- the rest of the text is in the /content directory -->
+
