@@ -42,7 +42,7 @@ The process of generating a PDF document from Markdown using this project/templa
 
 3. **Commit, Tag and Push**: Add the changes ```git add .```, commit them ```git commit -m "your commit comment"```, create a git tag ```git tag -a v1.0.0 -m "Release version 1.0.0"``` and push it ```git push origin v1.0.0```.
 
-4. **Using GitHub Actions for Automation**: When changes are pushed with a git-tag to the repository, GitHub Actions, as defined in `.github/workflows/`, automatically triggers the build process. The workflow installs Quarto, checks out the repository content, and runs the Quarto command to convert Markdown to LaTeX and then to PDF.
+4. **Using GitHub Actions for Automation**: When changes are pushed with a git-tag to the repository, GitHub Actions, as defined in `.github/workflows/`, automatically triggers the build process. The workflow installs Quarto, checks out the repository content, and runs the Quarto command to convert Markdown to [LaTeX](https://github.com/SimonWaldherr/BookTemplate/releases/download/v1.0.0/Book-Title.tex) and then to [PDF](https://github.com/SimonWaldherr/BookTemplate/releases/download/v1.0.0/Book-Title.pdf).
 
 5. **Storing the Result with GitHub Release**: Once the PDF is generated, the GitHub Actions workflow automatically creates a new release and attaches the PDF document to it. This makes the document accessible to users and provides version control for each release.
 
