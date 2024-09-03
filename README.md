@@ -1,5 +1,7 @@
 # Generating PDF Documents with Quarto, LaTeX, and GitHub Actions
 
+[![DOI](https://zenodo.org/badge/714360687.svg)](https://zenodo.org/doi/10.5281/zenodo.13647625)  
+
 ## Introduction
 
 This document serves as a guide for a project designed to demonstrate the process of generating PDF documents from Markdown using Quarto and LaTeX. Additionally, it incorporates the use of GitHub Actions to automate the generation process and GitHub Releases for storing the final output. This repository has been structured as a GitHub Template, allowing it to be easily used as a starting point for any book project or documentation endeavor.
