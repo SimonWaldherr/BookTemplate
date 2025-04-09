@@ -1,6 +1,9 @@
+# Quarto project configuration
 project:
   type: book
+  output-dir: _book
 
+# External metadata files
 metadata-files:
   - other/metadata.yml
   - other/glossar.yml
@@ -8,15 +11,15 @@ metadata-files:
 book:
   title: "Book Title"
   author: "Your Name"
-  date: "01.01.1970"
-  search: true
-  repo-url: "https://github.com/simonwaldherr/BookTemplate"
-  issued: "01.01.1970"
+  date: "1970-01-01"
   language: "en-US"
+  repo-url: "https://github.com/simonwaldherr/BookTemplate"
   isbn: "978-0-0000-0000-0"
   image: "other/image.jpg"
-  downloads: [pdf, epub]
+  search: true
+  downloads: [pdf, epub, docx]
   page-navigation: true
+
   chapters:
     - index.qmd
     - content/intro.qmd
@@ -25,15 +28,19 @@ book:
     - content/workflow.qmd
     - content/template.qmd
     - content/conclusion.qmd
+
 bibliography: other/references.bib
 
 format:
   html:
     theme: cosmo
+    code-fold: true
+
   pdf:
     keep-tex: true
     documentclass: scrbook
-    classoption: [paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]
+    classoption: ["paper=6in:9in", "pagesize=pdftex", "headinclude=on", "footinclude=on", "12pt"]
+    fig-pos: 'H'
     include-in-header:
       text: |
         \usepackage{fvextra}
@@ -47,11 +54,11 @@ format:
            breaksymbolleft={},
            breaklines
         }
-    fig-pos: 'H'
+
   epub:
     toc: true
     lang: en-US
+
   docx:
     toc: false
     lang: en-US
-
