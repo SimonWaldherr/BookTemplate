@@ -39,6 +39,6 @@ jobs:
       - name: Create GitHub Release with artifacts
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "_book/*.pdf,_book/*.epub,_book/*.docx,_book/*.djvu,*.tex"
+          artifacts: "_book/*.pdf,_book/*.epub,_book/*.docx,_book/*.djvu,_book/*.tex"
           bodyFile: "other/release.md"
           

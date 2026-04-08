@@ -1,7 +1,7 @@
 glossary:
   Quarto:
     url: https://quarto.org/
-    definition: An open-source scientific and technical publishing system.
+    definition: An open-source scientific and technical publishing system built on Pandoc that allows conversion of documents to HTML, PDF, EPUB, and more.
 
   Markdown:
     url: https://en.wikipedia.org/wiki/Markdown
@@ -10,11 +10,31 @@ glossary:
   PDF:
     url: https://en.wikipedia.org/wiki/PDF
     definition: Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1992 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems.
-    
+
   GitHub:
     url: https://github.com/
     definition: GitHub is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code.
-    
+
   LaTeX:
     url: https://www.latex-project.org/
-    definition: LaTeX is a high-quality typesetting system, it includes features designed for the production of technical and scientific documentation.
+    definition: LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
+
+  GitHub Actions:
+    url: https://docs.github.com/en/actions
+    definition: GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment workflows directly in your GitHub repository.
+
+  DjVu:
+    url: https://en.wikipedia.org/wiki/DjVu
+    definition: DjVu is a computer file format designed primarily to store scanned documents, especially those containing a combination of text, line drawings, indexed color images, and photographs.
+
+  EPUB:
+    url: https://en.wikipedia.org/wiki/EPUB
+    definition: EPUB (Electronic Publication) is a free and open e-book standard by the International Digital Publishing Forum (IDPF), designed for reflowable content.
+
+  Pandoc:
+    url: https://pandoc.org/
+    definition: Pandoc is a free and open-source document converter that supports conversion between numerous markup and document formats.
+
+  Nix:
+    url: https://nixos.org/
+    definition: Nix is a purely functional package manager that provides reproducible and declarative package management and system configuration.

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this template, please cite it as below."
+type: software
+title: "BookTemplate"
+abstract: "A Quarto book template with automated PDF, EPUB, DOCX, and DjVu generation via GitHub Actions."
+authors:
+  - family-names: Waldherr
+    given-names: Simon
+    orcid: "https://orcid.org/0000-0002-3392-2056"
+repository-code: "https://github.com/SimonWaldherr/BookTemplate"
+url: "https://github.com/SimonWaldherr/BookTemplate"
+license: MIT
+version: "1.0.0"
+date-released: "2023-01-01"
+keywords:
+  - quarto
+  - book
+  - template
+  - latex
+  - github-actions
+  - pdf
+  - epub

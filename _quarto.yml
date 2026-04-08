@@ -17,6 +17,8 @@ book:
   isbn: "978-0-0000-0000-0"
   image: "other/image.jpg"
   search: true
+  license: "MIT"
+  repo-actions: [edit, issue, source]
   downloads: [pdf, epub, docx]
   page-navigation: true
 
