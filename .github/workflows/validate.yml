@@ -1,0 +1,38 @@
+# GitHub Actions workflow for validating pull requests
+
+name: Validate Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate YAML files
+        run: |
+          pip install yamllint
+          yamllint -d "{extends: relaxed, rules: {line-length: {max: 200}}}" \
+            _quarto.yml other/metadata.yml other/glossar.yml
+
+      - name: Check Markdown files
+        run: |
+          pip install mdformat
+          mdformat --check index.qmd content/*.qmd || true
+
+      - name: Validate BibTeX
+        run: |
+          pip install pybtex
+          python -c "
+          from pybtex.database import parse_file
+          parse_file('other/references.bib')
+          print('BibTeX file is valid.')
+          "

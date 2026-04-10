@@ -11,7 +11,8 @@ let
   # TeX Live packages required for PDF rendering
   tex = pkgs.texlive.combine {
     inherit (pkgs.texlive)
-      scheme-small amsmath framed fvextra environ fontawesome5 orcidlink pdfcol tcolorbox tikzfill;
+      scheme-small amsmath framed fvextra environ fontawesome5 orcidlink pdfcol tcolorbox tikzfill
+      koma-script upquote;
   };
 
   # Additional system packages now include pdf2djvu for PDF-to-DJVU conversion.

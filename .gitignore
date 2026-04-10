@@ -1,3 +1,10 @@
 .DS_Store
 /.quarto/
-/_book
+/_book/
+*.log
+*.aux
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
